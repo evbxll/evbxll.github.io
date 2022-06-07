@@ -1,3 +1,11 @@
 theme: jekyll-theme-cayman
 title: EMB
 description: Evan Bell's Personal Website
+email: embell@mit.edu
+url: evan-bell.github.io
+
+navbar_fixed: true
+footer_fixed: true
+lang: en
+icon: 
+last_updated: Jun 07, 2022
