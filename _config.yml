@@ -3,6 +3,8 @@ title: EMB
 description: Evan Bell's Personal Website
 email: embell@mit.edu
 url: evan-bell.github.io
+github_username: Evan-Bell
+base_url: /main
 
 navbar_fixed: true
 footer_fixed: true
