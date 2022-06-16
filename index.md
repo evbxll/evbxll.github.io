@@ -1,4 +1,0 @@
----
-layout: header
-title: Home
----
