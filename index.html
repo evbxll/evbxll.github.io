@@ -1,29 +1,60 @@
+<!DOCTYPE html>
 <html> 
   <head> 
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/htmlincludejs"></script>
+
+    <title>EMB</title>
+    <meta property="og:title" content="EMB" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="Evan Bell’s Personal Website" />
+    <link rel="canonical" href="https://evan-bell.github.io/" />
+    <link rel="stylesheet" type="text/css" href="main.css" media=”screen” />
+    <link rel="stylesheet" type="text/css" href="navbar.css" media=”screen” />
+    <link rel="stylesheet" type="text/css" href="footer.css" media=”screen” />
     <script src="jquery.js"></script> 
     <script> 
     $(function(){
-      $("#includedContent").load("navbar.html"); 
+      $("#DivContent").load("navbar.html"); 
     });
     </script> 
-    <script src="jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#header").load("header.html"); 
-    });
-    </script> 
-    <script src="jquery.js"></script> 
-    <script> 
-    $(function(){
-      $("#footer").load("footer.html"); 
-    });
-    </script> 
+
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("import_html");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("import_html");
+                includeHTML();
+              }
+            }      
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      };
+      </script>
   </head> 
-
-
   <body> 
-     <div id="navbar"></div>
-     <div id="header"></div>
-     <div id="footer"></div>
+    <div id ="DivContent" import_html="navbar.html"></div> 
+    <div import_html="footer.html"></div> 
+
+    <script>
+    includeHTML();
+    </script>
   </body> 
 </html>
