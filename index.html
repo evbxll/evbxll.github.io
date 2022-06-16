@@ -5,56 +5,31 @@
     <script src="https://unpkg.com/htmlincludejs"></script>
 
     <title>EMB</title>
-    <meta property="og:title" content="EMB" />
+    <meta property="og:title" content="Evan Bell - Personal Website - Main Page" />
     <meta property="og:locale" content="en_US" />
     <meta name="description" content="Evan Bell’s Personal Website" />
     <link rel="canonical" href="https://evan-bell.github.io/" />
-    <link rel="stylesheet" type="text/css" href="main.css" media=”screen” />
-    <link rel="stylesheet" type="text/css" href="navbar.css" media=”screen” />
-    <link rel="stylesheet" type="text/css" href="footer.css" media=”screen” />
-    <script src="jquery.js"></script> 
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="items/navbar.css"/>
+    <link rel="stylesheet" href="items/footer.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     <script> 
     $(function(){
-      $("#DivContent").load("navbar.html"); 
+      $("#load_nav").load("items/navbar.html");
+      $("#load_foot").load("items/footer.html"); 
     });
     </script> 
-
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          /*search for elements with a certain atrribute:*/
-          file = elmnt.getAttribute("import_html");
-          if (file) {
-            /*make an HTTP request using the attribute value as the file name:*/
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4) {
-                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                /*remove the attribute, and call this function once more:*/
-                elmnt.removeAttribute("import_html");
-                includeHTML();
-              }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            /*exit the function:*/
-            return;
-          }
-        }
-      };
-      </script>
   </head> 
-  <body> 
-    <div id ="DivContent" import_html="navbar.html"></div> 
-    <div import_html="footer.html"></div> 
+  <body id='page'> 
+    <div id ="load_nav" ></div>
 
-    <script>
-    includeHTML();
-    </script>
+
+    <!-- PAGE CODE GOES HERE -->
+
+
+
+
+    <div id ="load_foot" ></div>
   </body> 
 </html>

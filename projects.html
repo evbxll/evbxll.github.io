@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/htmlincludejs"></script>
+
+    <title>EMB</title>
+    <meta property="og:title" content="Evan Bell - Personal Website - Projects" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="Evan Bell’s Personal Website" />
+    <link rel="canonical" href="https://evan-bell.github.io/" />
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="items/navbar.css"/>
+    <link rel="stylesheet" href="items/footer.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script> 
+    $(function(){
+      $("#load_nav").load("items/navbar.html");
+      $("#load_foot").load("items/footer.html"); 
+    });
+    </script> 
+  </head> 
+  <body id='page'> 
+    <div id ="load_nav" ></div>
+
+
+    <!-- PAGE CODE GOES HERE -->
+
+
+
+
+    <div id ="load_foot" ></div>
+  </body> 
+</html>
