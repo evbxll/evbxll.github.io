@@ -1,4 +1,8 @@
-#page{
+html,body{
+    min-height: 150vh !important;
+}
+
+body#page{
     --color-scale-black: #1b1f24;
     --color-scale-white: #ffffff;
     --color-scale-gray-0: #f6f8fa;
@@ -93,5 +97,12 @@
     --color-scale-coral-9: #510901;
 
     --color-fg-default: #24292f;
+
+
     display: block;
+}
+
+#main{
+    width: 100%;
+    height: 100%
 }
