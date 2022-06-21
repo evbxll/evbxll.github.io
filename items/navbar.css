@@ -47,9 +47,14 @@ min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 padding: 6px 8px;
 z-index: 1;
-font-size: 14px;
+font-size: 18px;
 }
 
 .dropdown:hover .dropdown-content {
 display: block;
+}
+
+.dropdown-content p a{
+    color: rgb(4, 138, 200);
+    font-style: normal;
 }
