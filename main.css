@@ -108,4 +108,5 @@ body#page{
 
 #main{
     flex: 100;
+    min-height: 90vh;
 }
