@@ -1,4 +1,9 @@
 .footer{
+    user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
     bottom: 0px;
     left: 0px;
     width: 100%;

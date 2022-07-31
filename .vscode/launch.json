@@ -7,8 +7,8 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "/Users/evan/Evan-Bell.github.io/index.html"
+            "name": "Open index.md",
+            "file": "/Users/evan/Evan-Bell.github.io/index.md"
         }
     ]
 }
