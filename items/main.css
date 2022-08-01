@@ -1,5 +1,6 @@
-html{
+html, body#page{
     min-height: 100vh !important;
+    min-width: 600px;
 }
 
 body#page{
@@ -98,15 +99,6 @@ body#page{
 
     --color-fg-default: #24292f;
 
-    display: flex;
     margin:0px;
     padding:0px;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-
-#main{
-    flex: 100;
-    min-height: 90vh;
 }

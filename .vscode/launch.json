@@ -1,8 +1,9 @@
 {
     "version": "0.2.0",
     "configurations": [
+
       {
-        "type": "firefox",
+        "type": "chrome",
         "request": "attach",
         "name": "Attach",
         "preLaunchTask": "jekyll"
