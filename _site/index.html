@@ -21,7 +21,29 @@
       $("#load_nav").load("/items/navbar.html");
       $("#load_foot").load("/items/footer.html"); 
     });
-    </script> 
+    </script>
+
+    <script>
+      const desiredRepo = "Evan-Bell.github.io";
+      const dateTagClass = "#footer_date";
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function()
+      {
+        if (this.readyState == 4 && this.status == 200)
+        {
+          
+          let repo = JSON.parse(this.responseText);
+          var lastUpdated = new Date(repo.updated_at);
+          $(dateTagClass).text(`${lastUpdated.toLocaleDateString(undefined, options)} at ${lastUpdated.toLocaleTimeString()}`);
+        }
+      };
+      xhttp.open("GET", "https://api.github.com/repos/Evan-Bell/Evan-Bell.github.io", true);
+      xhttp.send();
+    </script>
+
   </head> 
   <body id="page"> 
     <div id ="load_nav" ></div>

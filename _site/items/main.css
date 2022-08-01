@@ -1,6 +1,22 @@
 html, body#page{
     min-height: 100vh !important;
-    min-width: 600px;
+    min-width: 700px;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+.selectable{
+    cursor: text;
+    -webkit-touch-callout: normal;
+        -webkit-user-select: normal;
+        -khtml-user-select: normal;
+        -moz-user-select: normal;
+        -ms-user-select: normal;
+        user-select: normal;
 }
 
 body#page{
