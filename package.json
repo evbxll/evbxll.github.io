@@ -1,42 +1,45 @@
 {
   "name": "evbxllPersonal",
   "version": "0.1.0",
+  "homepage": "https://evbxll.github.io",
   "private": true,
   "scripts": {
-    "dev": "LOCAL=yes next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "postdeploy": "echo 'Deployment successful!'",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint ."
-  },
-  "webpack": {
-    "devServer": {
-      "static": {
-        "directory": "./src"
-      }
-    }
+    "lint": "eslint --ext .js --ignore-path .gitignore ."
   },
   "main": "index.tsx",
   "author": "Evan Michael Bell",
   "license": "MIT",
   "repository": "https://github.com/evbxll/evbxll.github.io",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-    "@fortawesome/free-brands-svg-icons": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "autoprefixer": "^10.4.19",
+    "eslint-config-next": "^14.2.1",
     "next": "^14.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.4.3",
-    "three": "^0.163.0",
-    "webpack": "^5.0.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "tailwindcss": "^3.0.0",
+    "three": "^0.134.0"
   },
   "devDependencies": {
-    "typescript": "5.4.5",
-    "webpack": "^5.0.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "@next/eslint-plugin-next": "^14.2.1",
+    "@types/react": "18.0.0",
+    "@types/three": "^0.135.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^3.2.3",
+    "typescript": "^4.5.4",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.8.0"
   }
 }

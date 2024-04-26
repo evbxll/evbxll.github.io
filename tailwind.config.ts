@@ -1,10 +1,13 @@
+// tailwind.config.ts
+
+// Export an empty object to make it a module
+export default {};
+
+// Your Tailwind CSS configuration goes here
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}"
   ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+  // Other Tailwind CSS configuration properties
+};
