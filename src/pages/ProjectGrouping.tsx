@@ -13,6 +13,12 @@ const projectWebpages = [
     description: 'An interactive simulation of bird flocking behavior, implementing algorithms based on Craig Reynolds\'s boid model. Provides insights into collective behavior and autonomous agent systems.',
     image: 'https://via.placeholder.com/150' // Add your image URL here
   },
+  {
+    title: 'Ball Simulator',
+    url: 'https://evbxll.github.io/PhysicsSim/',
+    description: 'Bouncing Balls',
+    image: 'https://via.placeholder.com/150' // Add your image URL here
+  },
   // { name: 'Project 3', url: 'https://project3.com', description: '', image: '' },
   // Add more projects as needed
 ];
