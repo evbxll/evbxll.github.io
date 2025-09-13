@@ -4,11 +4,11 @@ title: About Me
 permalink: /about/
 ---
 
-Hi, I'm Evan Bell - a software engineer at Google with a passion for mathematics and building interesting things.
+Hey, I'm Evan. I have a passion for building cool sh**, or kinda cool sh**, sometimes just stuff that's sh**
 
 ## What I Do
 
-I spend my days working on software engineering problems at Google, and my evenings exploring mathematical concepts and personal projects. I believe in the beauty of elegant code and mathematical proofs alike.
+I spend my days working at Google, and my evenings exploring mathematical concepts and personal projects.
 
 ## Interests
 
