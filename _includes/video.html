@@ -1,0 +1,14 @@
+<div class="video-wrapper">
+  {% if include.type == 'youtube' %}
+  <iframe src="https://www.youtube.com/embed/{{ include.id }}" allowfullscreen>
+  </iframe>
+  {% elsif include.type == 'vimeo' %}
+  <iframe src="https://player.vimeo.com/video/{{ include.id }}" allowfullscreen>
+  </iframe>
+  {% else %}
+  <video controls>
+    <source src="{{ include.url }}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  {% endif %}
+</div>

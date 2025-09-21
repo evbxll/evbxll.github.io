@@ -22,19 +22,29 @@ title: Evan Bell
 email: evbell@google.com
 description: >- # this means to ignore newlines until "baseurl:"
   Software engineer @ Google and hobby mathematician. Projects, writing, and notes.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://evanbell.site" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  evbxll
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://evanbell.site' # the base hostname & protocol for your site, e.g. http://example.com
+github_username: evbxll
 
 # Build settings
-theme: minima
+# Using custom theme (no remote_theme needed)
 plugins:
   - jekyll-feed
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    block:
+      line_numbers: false
 
 # Define which pages appear in the header navigation
 header_pages:
   - about.markdown
-  - blog.markdown
+  # - blog.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -44,14 +54,12 @@ header_pages:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - commands.md
+  - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - README.md
+  - LICENSE

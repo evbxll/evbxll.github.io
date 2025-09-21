@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About Me
 permalink: /about/
 ---
@@ -19,4 +19,4 @@ I spend my days working at Google, and my evenings exploring mathematical concep
 
 ## Connect
 
-Feel free to check out my projects on [GitHub](https://github.com/evbxll) or reach out via email at evbell@google.com.
+Feel free to check out my projects on [GitHub](https://github.com/evbxll) or reach out via email at [evbell@google.com](evbell@google.com)

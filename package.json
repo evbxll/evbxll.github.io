@@ -1,0 +1,24 @@
+{
+  "name": "evbxll.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,md,liquid,scss,css,json,yml}\"",
+    "lint:css": "stylelint \"**/*.{css,scss}\" --allow-empty-input",
+    "lint": "npm run format && npm run lint:css",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.3.0",
+    "@shopify/prettier-plugin-liquid": "^1.4.0",
+    "stylelint": "^16.5.0",
+    "stylelint-config-standard-scss": "^13.0.0"
+  },
+  "lint-staged": {
+    "*.{html,md,liquid,json,yml}": "prettier --write",
+    "*.{css,scss}": "stylelint --fix --allow-empty-input",
+    "Gemfile": "bundle exec rubocop -A"
+  }
+}

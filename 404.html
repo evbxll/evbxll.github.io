@@ -1,98 +1,42 @@
 ---
 permalink: /404.html
-layout: default
-title: "No Page Here"
+layout: page
+title: 'No Page Here'
 sitemap: false
 ---
-
-<style type="text/css" media="screen">
-  .error-container {
-    margin: 50px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-
-  .avocado {
-    margin: 20px 0;
-    animation: bounce 2s infinite;
-    max-width: 320px;
-    margin: 20px auto;
-  }
-
-  .avocado img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,.12);
-  }
-
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-  }
-
-  h1 {
-    margin: 30px 0;
-    font-size: 3em;
-    color: #4a7c59;
-  }
-
-  .error-message {
-    font-size: 1.2em;
-    color: #666;
-    margin: 20px 0;
-  }
-
-  .suggestion {
-    background: #f0f8f0;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 30px 0;
-  }
-
-  .home-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #acc3b3;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background 0.3s;
-  }
-
-  .home-link:hover {
-    background: #3a5c49;
-  }
-</style>
 
 <div class="error-container">
   <div class="avocado">
     <picture>
-      <source srcset="{{ '/assets/img/avocado-404.webp' | relative_url }}" type="image/webp">
+      <source
+        srcset="{{ '/assets/img/avocado-404.webp' | relative_url }}"
+        type="image/webp"
+      />
       <img
         src="{{ '/assets/img/avocado-404.jpg' | relative_url }}"
         alt="Smiling avocado plushie"
-        width="800" height="1067" loading="eager" decoding="async"
+        width="800"
+        height="1067"
+        loading="eager"
+        decoding="async"
       />
     </picture>
   </div>
 
-  <h1>Oops! No Page Here</h1>
+  <h2 class="error-title">Oops! No Page Here</h2>
 
   <div class="error-message">
     <p>Enjoy this Avocado to comfort you...</p>
   </div>
 
-  <div class="suggestion">
+  <div class="suggestion-box">
     <p><strong>Avocado suggests:</strong></p>
-    <ul style="list-style: none; padding: 0;">
+    <ul>
       <li>Check if the URL is spelled correctly</li>
       <li>The page might have been moved or deleted</li>
       <li>Try going back to the homepage</li>
     </ul>
   </div>
 
-  <a href="/" class="home-link">Ok, take me home!</a>
+  <a href="/" class="button-primary">Ok, take me home!</a>
 </div>

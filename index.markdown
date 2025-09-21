@@ -1,13 +1,7 @@
 ---
-layout: home
+layout: default
 title: Welcome
 ---
-
-# Hello, I'm Evan Bell
-
-Welcome to my corner of the internet where I share my thoughts on software engineering, mathematics, and the intersection of both. Here you'll find my projects, technical writings, and occasional random thoughts that capture my curiosity.
-
-## Recent Posts
 
 Check out my [blog](/blog/) for articles on software development, mathematical explorations.
 

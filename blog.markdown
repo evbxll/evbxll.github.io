@@ -4,16 +4,15 @@ title: Blog
 permalink: /blog/
 ---
 
-## All Posts
-
+<ul class="post-list">
 {% for post in site.posts %}
-  <article class="post-preview">
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-    <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-  </article>
-  <hr>
+  <li>
+    <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
+    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  </li>
 {% endfor %}
+</ul>
 
 {% if site.posts.size == 0 %}
   <p>No posts yet. Check back soon for updates!</p>

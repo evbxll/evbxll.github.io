@@ -1,0 +1,5 @@
+_site/
+node_modules/
+vendor/
+*.min.css
+assets/css/main.scss

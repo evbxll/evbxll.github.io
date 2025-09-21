@@ -1,5 +1,28 @@
+# Jekyll
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Dependencies
+node_modules/
+.bundle/
+package-lock.json
+
+# Linting and tooling
+.prettierrc
+.stylelintrc.json
+.husky/
+commands.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
