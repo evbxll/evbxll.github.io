@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      
+        Contact - evanbell.site
+      
+    </title>
+    <meta
+      name="description"
+      content="Software engineer @ Google and hobby mathematician. Projects, writing, and notes."
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Evan Bell"
+      href="/feed.xml"
+    />
+
+    <!-- MathJax for mathematical equations -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)'],
+          ],
+          displayMath: [
+            ['$$', '$$'],
+            ['\\[', '\\]'],
+          ],
+          processEscapes: true,
+        },
+        svg: {
+          fontCache: 'global',
+        },
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+      async
+    ></script>
+
+    <!-- Code syntax highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      // Add linkable anchors to headings h1..h3, positioned to the left of content
+      document.addEventListener('DOMContentLoaded', function() {
+        const headings = document.querySelectorAll('h1, h2, h3');
+        headings.forEach(h => {
+          if (!h.id) {
+            h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
+          }
+          const wrapper = document.createElement('div');
+          wrapper.className = 'heading-wrap';
+          h.parentNode.insertBefore(wrapper, h);
+          wrapper.appendChild(h);
+
+          const a = document.createElement('a');
+          a.className = 'header-anchor';
+          a.href = `#${h.id}`;
+          a.setAttribute('aria-hidden', 'true');
+          a.textContent = '•';
+          wrapper.appendChild(a);
+          h.setAttribute('tabindex', '-1');
+        });
+      });
+    </script>
+    <header class="site-header">
+      <nav class="site-nav">
+        <ul class="nav-links">
+          <li><a href="/">about</a></li>
+          <li><a href="/projects/">projects</a></li>
+          <li><a href="/blog/">writings</a></li>
+          <li><a href="/contact/" class="email">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site-content"><article class="page">
+  <header class="page-header">
+    <h1 class="page-title">Contact</h1>
+  </header>
+
+  <div class="page-content"><p>If you find bugs 😕, please <a href="mailto:evan.7.bell@gmail.com">email me</a>.</p>
+
+<ul class="contact-list">
+  <li>
+    <a href="https://github.com/evbxll" target="_blank" rel="noopener noreferrer" class="contact-link">
+      <span class="icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .5C5.73.5.77 5.46.77 11.73c0 4.9 3.17 9.06 7.57 10.53.55.1.75-.24.75-.53 0-.26-.01-1.12-.02-2.03-3.08.67-3.73-1.31-3.73-1.31-.5-1.27-1.22-1.6-1.22-1.6-.99-.68.08-.66.08-.66 1.1.08 1.67 1.13 1.67 1.13.98 1.67 2.58 1.19 3.21.91.1-.71.38-1.19.69-1.47-2.46-.28-5.05-1.23-5.05-5.47 0-1.21.43-2.19 1.14-2.97-.11-.28-.49-1.41.11-2.94 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 5.55 0c2.12-1.43 3.05-1.13 3.05-1.13.6 1.53.22 2.66.11 2.94.71.78 1.14 1.76 1.14 2.97 0 4.25-2.6 5.18-5.07 5.46.39.33.74.98.74 1.98 0 1.43-.01 2.59-.01 2.94 0 .29.2.64.76.53 4.39-1.47 7.55-5.63 7.55-10.53C23.23 5.46 18.27.5 12 .5Z" /></svg>
+      </span>
+      <span class="label">github.com/evbxll</span>
+    </a>
+  </li>
+  <li>
+    <a href="mailto:evan.7.bell@gmail.com" class="contact-link" aria-label="Email">
+      <span class="icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.01L12 12 4 6.01V6h16ZM4 18V8.236l7.384 5.538a1 1 0 0 0 1.232 0L20 8.236V18H4Z" />
+        </svg>
+      </span>
+      <span class="label">evan.7.bell@gmail.com</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/evan-m-bell" target="_blank" rel="noopener noreferrer" class="contact-link">
+      <span class="icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.983 3.5C4.983 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.483 1.12 2.483 2.5zM.246 8.999h4.508V24H.246V8.999zM8.982 8.999h4.324v2.051h.062c.603-1.144 2.077-2.351 4.278-2.351 4.577 0 5.421 3.008 5.421 6.921V24h-4.7v-6.602c0-1.575-.028-3.6-2.194-3.6-2.197 0-2.533 1.717-2.533 3.49V24H8.982V8.999z" /></svg>
+      </span>
+      <span class="label">linkedin.com/in/evan-m-bell</span>
+    </a>
+  </li>
+</ul>
+
+</div>
+</article>
+</main>
+  </body>
+</html>
