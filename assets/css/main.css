@@ -119,6 +119,19 @@ hr { border: 0; height: 1px; background: #30363d; margin: 2rem 0; }
 .error-container .button-primary { display: inline-block; margin-top: 2rem; padding: 0.75rem 2rem; background: #58a6ff; color: #0d1117; text-decoration: none; border-radius: 25px; font-weight: 500; transition: all 0.3s ease; }
 .error-container .button-primary:hover { background: #79c0ff; transform: scale(1.05); text-decoration: none; }
 
+.project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
+
+.project-card { display: block; overflow: hidden; background-color: #161b22; border: 1px solid #30363d; border-radius: 8px; color: #c9d1d9; transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease; }
+.project-card:hover, .project-card:focus-visible { color: #c9d1d9; text-decoration: none; transform: translateY(-4px); border-color: #58a6ff; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); }
+.project-card .project-card-image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid #30363d; transition: transform 0.3s ease; }
+.project-card:hover .project-card-image, .project-card:focus-visible .project-card-image { transform: scale(1.04); }
+
+.project-card-body { padding: 0.9rem 1rem 1rem; }
+
+.project-card-name { margin: 0 0 0.2rem; font-size: 1.1rem; font-weight: 600; color: #58a6ff; }
+
+.project-card-blurb { margin: 0; font-size: 0.9rem; line-height: 1.4; color: #8b949e; }
+
 @media (max-width: 768px) { .site-content { padding: 0 1rem; }
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
